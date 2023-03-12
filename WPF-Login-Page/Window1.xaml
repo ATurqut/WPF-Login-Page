@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPF___Login_and_Registration.Regestration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF___Login_and_Registration"
+        mc:Ignorable="d"
+        Title="Regestration" Height="450" Width="800">
+
+    <Grid Height="450" Width="800" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
+
+        <Label FontSize="25" Margin="165,154,548,220"
+            Content="Name:"
+            />
+        <TextBox Name="nmtxtbox" 
+            Width="225" Height="30" FontSize="19"
+                 Margin="267,162,308,258" />
+        <Label FontSize="25" Margin="137,215,495,159"
+            Content="Password:"
+            />
+        <PasswordBox Name="pstxtbox" 
+            FontSize="19"
+            Width="225" Height="30" 
+            Margin="266,225,309,195"></PasswordBox>
+
+        <Button Height="50" 
+                FontSize="25" Margin="253,300,289,100" Click="Registrartins" Content="Sign Up" Background="#FF00FF3E" FontWeight="Bold" />
+        <Button Width="150" Height="50" 
+                FontSize="30" Margin="298,358,352,42" Click="back_Login" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" FontWeight="Bold" >Login</Button>
+        <Label Content="FACEBOOK" HorizontalAlignment="Left" Margin="273,63,0,0" VerticalAlignment="Top" Width="260" FontWeight="Bold" FontFamily="Algerian" FontSize="36"/>
+    </Grid>
+</Window>
